@@ -27,5 +27,6 @@ class TESTSCAN {
         String line = scan.nextLine();
         System.out.println(line);
         scan.close();
+
     }
 }
