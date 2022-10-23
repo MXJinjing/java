@@ -34,7 +34,7 @@
 
 关键字：预留
 
-注释
+注释 // /* */
 
 ## 常见数据类型
 
@@ -44,3 +44,169 @@
 | 浮点型   | float、double          |
 | 字符型   | char                   |
 | 布尔型   | boolean                |
+
+## 转义符
+
+| 转义   | 描述            |
+| ------ | --------------- |
+| \ddd   | 八进制unicode   |
+| \uxxxx | 十六进制unicode |
+| \\'    | '               |
+| \\"    | "               |
+| \\\\   | \               |
+| \r     | 回车            |
+| \n     | 换行            |
+| \f     | 换页            |
+| \t     | 水平制表符      |
+| \b     | 后退            |
+
+## 变量类型转化
+
+```
+double x = 9，997;
+int nx = (int) x;
+```
+
+## 运算符、表达式
+
+二元运算符：+ - * / % >> << & ^ |
+
+一元运算符：++ -- -a
+
+赋值运算符：+= -= *= /= %=
+
+关系运算符：> >= < <= == !=
+
+逻辑运算符:
+
+| 运算符 | 含义   | 用法   |
+| ------ | ------ | ------ |
+| !      | 非     | !A     |
+| &&     | 与     | A&&B   |
+| \|\|   | 条件或 | A\|\|B |
+
+条件运算符：A>B ? A : B
+
+其他运算符： . new () {}
+
+优先级：一元>二元
+
+## 字符串
+
+```
+"Hello world"
+```
+
+String对象
+
+```
+String str1 = "This is a string";
+String str2 = str1; //指向同一个对象
+String str2 = new String(str1); //指向内存中不同的对象
+
+String s;
+s = new String("Hello"); //分步创建
+
+```
+
+常用方法：
+
+```
+public int lenth() //返回长度
+public Boolean equals( Obeject obj) //比较是否相等
+public String substring( int index) //子串
+public String substring( int beginIndex, int endIndex)
+public char charAt(int index) //返回指定位置的字符
+public int indexOf(String str) //str第一次出现的位置
+public String replace(char oldChar, char newChar) //替换所有
+public String trim() //去掉首尾空格
+
+```
+
+StringBuffer对象
+
+```
+public StringBuffer() //创建没有字符的缓冲区，16字符长
+public StringBuffer(int lenth) //没有字符的缓冲区，容量由lenth决定
+public StringBuffer(String string) //缓冲区，string+16字符长
+```
+
+# 数组
+
+## 一维数组
+
+声明：
+
+```
+int a[];
+int[] a;
+```
+
+不能使用`int a[10]`
+
+内存申请：
+
+```
+int[] a;
+a = new int[10];
+```
+
+静态初始化：
+
+```
+int a[] = {1, 2, 3};
+```
+
+不能使用`int a[]; a={1,2,3};`
+
+动态初始化:
+
+```
+int c[] = new int[12];
+
+int c[]; //声明
+c = new int[12]; //创建数
+
+```
+
+for-each 语句：
+
+```
+for (int row : a)
+    System.out.print(row + " ");
+```
+
+## 二维数组
+
+3x4 数组 声明：
+
+```
+int [][] = a;
+a = new int[3][];
+a[0] = new int[4];
+a[1] = new int[4];
+a[2] = new int[4];
+```
+
+或者
+
+```
+int a[][] = new int[3][4];
+```
+
+动态初始化：
+
+```
+int a[][] = new int[2][3];
+a[0][0] = 33;
+```
+
+静态初始化：
+
+```
+int a[][]={{2, 3}, {1, 3}, {2, 3}};
+```
+
+数组名.lenth 行数
+
+数组名[i].lenth 列数
