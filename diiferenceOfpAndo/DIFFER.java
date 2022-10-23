@@ -1,7 +1,6 @@
-import java.lang.*;
 import java.util.*;
 
-class GFG {
+class DIFFER {
 	public static void main(String ar[])
 	{
 		System.out.println("PRIMITIVE DATA TYPES\n");

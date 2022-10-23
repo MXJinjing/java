@@ -1,7 +1,7 @@
 // Java Program to Demonstrate Char Primitive Data Type
 
 // Class
-class GFG {
+class Char {
 	// Main driver method
 	public static void main(String args[])
 	{

@@ -1,6 +1,6 @@
 // Java Program to demonstrate Byte Data Type
 // Class
-class GFG {
+class Byte {
 	// Main driver method
 	public static void main(String args[]) {
 		byte a = 126;

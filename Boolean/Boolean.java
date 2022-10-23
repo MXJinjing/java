@@ -11,7 +11,7 @@ class GFG {
 		// If condition holds
 		if (b == true){
 			// Print statement
-			System.out.println("Hi Geek");
+			System.out.println("Hi Geekjava ");
 		}
 		// If condition holds
 		if(a == false){

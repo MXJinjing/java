@@ -1,11 +1,10 @@
 // Java Program to Illustrate Float Primitive Data Type
 // Importing required classes
 
-import java.io.*;
 // Class
-class GFG {
+class FLOAT {
 	// Main driver method
-	public static void main(String[] args){
+			public static void main(String[] args){
 		// Declaring and initializing float value
 		// float value1 = 9.87;
 		// Print statement
