@@ -16,7 +16,7 @@ class Cylinder {
     }
 }
 
-class ObjectCom {
+public class ObjectCom {
     public static void main(String[] args) {
         Cylinder v1 = new Cylinder(2.0, 3);
         Cylinder v2 = new Cylinder(2.0, 3);
